@@ -22,7 +22,7 @@
 # Inherit from dynamic_common
 -include device/motorola/sm6150_common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := nairo
+TARGET_OTA_ASSERT_DEVICE := liber
 
 TARGET_KERNEL_CONFIG := vendor/omni_liber_defconfig
 

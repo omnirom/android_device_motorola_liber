@@ -43,11 +43,13 @@ namespace implementation {
  * Write value to path and close file.
  */
 static void set(std::string path, std::string value) {
+    ALOGE("set string");
     std::ofstream file(path);
     file << value;
 }
 
 static void set(std::string path, int value) {
+    ALOGE("set int");
     set(path, std::to_string(value));
 }
 
@@ -63,12 +65,17 @@ static T get(const std::string& path, const T& def) {
 static void handleBacklight(const LightState& state) {
     int maxBrightness = get("/sys/class/backlight/panel0-backlight/max_brightness", -1);
     if (maxBrightness < 0) {
-        maxBrightness = 4096;
+        maxBrightness = 255;
     }
     int sentBrightness = Light::rgbToBrightness(state);
     int brightness = sentBrightness * maxBrightness / 255;
     set(LCD_LED, brightness);
     set(LCD_LED, brightness);
+}
+
+static void handleBattery(const LightState& state) {
+    int brightness = Light::rgbToBrightness(state);
+    set(LEDS BRIGHTNESS, brightness);
 }
 
 static void handleNotification(const LightState& state) {
@@ -93,6 +100,7 @@ static void handleNotification(const LightState& state) {
 
 static std::map<Type, std::function<void(const LightState&)>> lights = {
     {Type::BACKLIGHT, handleBacklight},
+    {Type::BATTERY, handleBattery},
     {Type::NOTIFICATIONS, handleNotification},
     {Type::ATTENTION, handleNotification},
 };

@@ -21,6 +21,3 @@
 
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.liber
-
-ROM_BUILDTYPE := GAPPS
-$(call inherit-product-if-exists, vendor/gapps/config.mk)

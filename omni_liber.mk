@@ -39,12 +39,12 @@ PRODUCT_MODEL := motorola one fusion +
 TARGET_DEVICE := MotoOneFusion+
 PRODUCT_SYSTEM_NAME := MotoOneFusion+
 
-VENDOR_RELEASE := 10/QPI30.73-16-5-4/874f7:user/release-keys
+VENDOR_RELEASE := 10/QPIS30.73-33-2/90024:user/release-keys
 BUILD_FINGERPRINT := motorola/liber_retail/liber:$(VENDOR_RELEASE)
 OMNI_BUILD_FINGERPRINT := motorola/liber_retail/liber:$(VENDOR_RELEASE)
-OMNI_PRIVATE_BUILD_DESC := "'liber_retail-user 10 QPI30.73-16-5-4 874f7 release-keys'"
+OMNI_PRIVATE_BUILD_DESC := "'liber_retail-user 10QPIS30.73-33-2 90024 release-keys'"
 
-PLATFORM_SECURITY_PATCH_OVERRIDE := 2020-07-01
+PLATFORM_SECURITY_PATCH_OVERRIDE := 2021-01-01
 
 TARGET_VENDOR := motorola
 

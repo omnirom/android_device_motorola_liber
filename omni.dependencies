@@ -22,5 +22,29 @@
     "repository": "android_vendor_qcom_opensource_bluetooth-commonsys-intf",
     "target_path": "vendor/qcom/opensource/commonsys-intf/bluetooth",
     "revision": "android-11"
-  }
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_vendor_qcom_opensource_fm-commonsys",
+    "target_path": "vendor/qcom/opensource/fm-commonsys",
+    "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_device_motorola_sm6150_common",
+    "target_path": "device/motorola/sm6150_common",
+    "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_device_motorola_dynamic_common",
+    "target_path": "device/motorola/dynamic_common",
+    "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_kernel_motorola_sm6150",
+    "target_path": "kernel/motorola/sm6150",
+    "revision": "android-11"
+  },
 ]

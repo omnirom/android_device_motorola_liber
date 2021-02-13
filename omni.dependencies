@@ -46,5 +46,11 @@
     "repository": "android_kernel_motorola_sm6150",
     "target_path": "kernel/motorola/sm6150",
     "revision": "android-11"
+  },
+  {
+    "remote": "omnirom",
+    "repository": "android_packages_apps_MotoActions",
+    "target_path": "packages/apps/MotoActions ",
+    "revision": "android-11"
   }
 ]

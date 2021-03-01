@@ -19,5 +19,10 @@
 # product configuration (apps).
 #
 
+# Light Hal
 PRODUCT_PACKAGES += \
     android.hardware.light@2.0-service.liber
+
+# RROs
+PRODUCT_PACKAGES += \
+    MotoLiber

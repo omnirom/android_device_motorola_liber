@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <integer name="config_nightDisplayColorTemperatureDefault">4500</integer>
+    <integer name="config_nightDisplayColorTemperatureMax">6000</integer>
+    <integer name="config_nightDisplayColorTemperatureMin">3000</integer>
+    <integer name="config_autoPowerModeAnyMotionSensor">30</integer>
+    <integer name="config_attentionMaximumExtension">240000</integer>
+    <string name="config_mms_user_agent">motorolaonefusion+</string>
+    <string name="wifi_tether_configure_ssid_default">motorola one fusion+</string>
+    
+    <!-- Height of the status bar -->
+    <dimen name="status_bar_height">80.0px</dimen>
+
+    <!-- Radius of the software rounded corners. -->
+    <dimen name="rounded_corner_radius">103px</dimen>
+
+    <!-- Minimum screen brightness setting allowed by power manager.
+         The user is forbidden from setting the brightness below this level.
+         Equivalent to 1/255. -->
+    <item name="config_screenBrightnessSettingMinimumFloat" format="float" type="dimen">0.0</item>
+
+</resources>
